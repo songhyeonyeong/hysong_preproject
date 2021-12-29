@@ -22,7 +22,6 @@ yarn start
 │   └── utills        // 시스템 공통 utills
 │   └── views         // 페이지
 위와 같이 폴더 구조를 구성
-```
 2. vite 를 사용하여 번들링 구성
 3. React-meterial-ui  ui 구성 후, 컴포넌트 구성 (vuetify 와 비슷)
 4. React-router-config 로 기존 vue-router 처럼 라우팅을 나열 할 수 있도록 구성  ->  router/router.ts
