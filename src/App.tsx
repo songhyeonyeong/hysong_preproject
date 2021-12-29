@@ -1,7 +1,8 @@
-import { BrowserRouter} from "react-router-dom";
+import * as React from 'react';
+import { BrowserRouter } from "react-router-dom";
+import { renderRoutes } from "react-router-config";
 import DefaultLayout from "@/layouts/DefaultLayout";
 import routes from "@/routers/router";
-import { renderRoutes } from "react-router-config";
 
 function App() {
   return (
@@ -11,7 +12,6 @@ function App() {
           {renderRoutes(routes)}
         </DefaultLayout>
       </BrowserRouter>
-
     </div>
   )
 }

@@ -11,9 +11,7 @@ import Orders from '@/components/Order';
 
 export default function Dashboard() {
   return (
-    <React.Fragment>
-          
-            <Grid container spacing={3}>
+    <Grid container spacing={3}>
               {/* Chart */}
               <Grid item xs={12} md={8} lg={9}>
                 <Paper
@@ -47,6 +45,5 @@ export default function Dashboard() {
                 </Paper>
               </Grid>
             </Grid>
-    </React.Fragment>
   );
 }

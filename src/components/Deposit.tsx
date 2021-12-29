@@ -9,7 +9,7 @@ function preventDefault(event: React.MouseEvent) {
 
 export default function Desposit() {
   return (
-    <React.Fragment>
+    <>
       <Title>Recent Document</Title>
       <Typography component="p" variant="h4">
         $3,024.00
@@ -22,6 +22,6 @@ export default function Desposit() {
           View balance
         </Link>
       </div>
-    </React.Fragment>
+    </>
   );
 }
