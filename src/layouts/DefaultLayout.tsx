@@ -17,6 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems } from '../components/ListItems';
 import Copyright from '@/components/Copyright';
 import {renderRoutes} from "react-router-config";
+import { BrowserRouter} from "react-router-dom";
 
 
 const drawerWidth: number = 240;
@@ -144,9 +145,7 @@ export default function DefaultLayout(props: {children}) {
           }}
         >
           <Toolbar />
-          <React.Fragment>
             {props.children}
-          </React.Fragment>
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Copyright sx={{ pt: 4 }} />
           </Container>  
