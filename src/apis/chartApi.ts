@@ -1,9 +1,6 @@
-import axios, { AxiosInstance } from 'axios';
-import cookies from 'js-cookie';
+import {api} from '@/apis/ApiService'
 
-export const customAxios: AxiosInstance = axios.create({
-  baseURL: `${SERVER_ADDRESS}`,
-  headers: {
-    access_token: cookies.get('access_token'),
-  },
-});
+export const chartApi = {
+  getChart: () => api.get("movie/now_playing"),
+};
+

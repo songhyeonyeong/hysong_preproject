@@ -11,12 +11,16 @@ import Drawer from '@/components/Drawer';
 const mdTheme = createTheme();
 
 function DefaultLayout(props: {children:any}) {
+  const [open, setOpen] = React.useState(true);
+  const toggleDrawer = () => {
+    setOpen(!open);
+  };
   return (
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar title="대시보드"/>
-        <Drawer />
+        <AppBar open={open} title="대시보드" toggleDrawer={toggleDrawer} />
+        <Drawer open={open} toggleDrawer={toggleDrawer}/>
         <Box
           component="main"
           sx={{

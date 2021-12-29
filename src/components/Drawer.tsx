@@ -34,13 +34,13 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     },
   }),
 );
-function DrawerComponent() {
+function DrawerComponent(props:{open:boolean,toggleDrawer:any}) {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
   };
   return (
-      <Drawer variant="permanent" open={open}>
+      <Drawer variant="permanent" open={props.open}>
       <Toolbar
         sx={{
           display: 'flex',
@@ -49,7 +49,7 @@ function DrawerComponent() {
           px: [1],
         }}
       >
-        <IconButton onClick={toggleDrawer}>
+        <IconButton onClick={props.toggleDrawer}>
           <ChevronLeftIcon />
         </IconButton>
       </Toolbar>
