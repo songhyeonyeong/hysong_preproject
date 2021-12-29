@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { BrowserRouter} from "react-router-dom";
+import DefaultLayout from "@/layouts/DefaultLayout";
+import routes from "@/routers/router";
+import { renderRoutes } from "react-router-config";
 
 function App() {
   return (
     <div className="App">
-      hello world!!!
+      <BrowserRouter>
+        <DefaultLayout>
+          {renderRoutes(routes)}
+        </DefaultLayout>
+      </BrowserRouter>
+
     </div>
   )
 }
-
 export default App

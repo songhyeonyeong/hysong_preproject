@@ -7,7 +7,7 @@ function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
-export default function Document() {
+export default function Desposit() {
   return (
     <React.Fragment>
       <Title>Recent Document</Title>

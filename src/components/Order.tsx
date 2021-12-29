@@ -59,7 +59,7 @@ function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
-export default function Orders() {
+export default function Order() {
   return (
     <React.Fragment>
       <Title>Recent Orders</Title>
