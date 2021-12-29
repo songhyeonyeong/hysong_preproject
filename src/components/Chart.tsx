@@ -17,15 +17,6 @@ const data:Array<chartParam> = [
   {time:'24:00', amount:undefined},
 ]
 
-
-// Generate Sales Data
-function createData(data:Array<chartParam>) {
-  return data.map((x)=>{
-    return {x.time,x.amount};
-  })
-}
-
-
 export default function Chart() {
   const theme = useTheme();
 
