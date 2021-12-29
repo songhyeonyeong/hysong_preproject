@@ -21,12 +21,18 @@ yarn start
 │   └── router        // router 라우팅 구성
 │   └── utills        // 시스템 공통 utills
 │   └── views         // 페이지
-위와 같이 폴더 구조를 구성
+
+
 2. vite 를 사용하여 번들링 구성
+
 3. React-meterial-ui  ui 구성 후, 컴포넌트 구성 (vuetify 와 비슷)
+
 4. React-router-config 로 기존 vue-router 처럼 라우팅을 나열 할 수 있도록 구성  ->  router/router.ts
+
 5. 공통 layout 을 만들어, layout 안에서 view page 들이 라우팅 될 수 있게 구성    ->  App.tsx
+
 6. 함수형 컴포넌트 사용하여 react-hook 활용 layout/DefaultLayout.tsx line 14
+
 7. axios 캡슐화 하여, api 구성
 ```
 
