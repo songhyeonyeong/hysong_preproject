@@ -4,14 +4,14 @@
 react-typescript vite 로 구성된 FE 프로젝트
 이전에 했던 프로젝트가 없어 전회사에서 했던 프로젝트 기억을 되살려  간단한 스켈레톤 소스를 구성해보았습니다. 
 ```
-start
+## start
 ```
 yarn start
 ```
 
 ## 프로젝트의 포인트
-1. 폴더구조
 ```
+1. 폴더구조
 ├── src
 │   ├── apis          // api 모듈화
 │   ├── components    // 컴포넌트 구성
@@ -29,4 +29,5 @@ yarn start
 5. 공통 layout 을 만들어, layout 안에서 view page 들이 라우팅 될 수 있게 구성    ->  App.tsx
 6. 함수형 컴포넌트 사용하여 react-hook 활용 layout/DefaultLayout.tsx line 14
 7. axios 캡슐화 하여, api 구성
+```
 
